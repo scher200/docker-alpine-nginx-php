@@ -1,0 +1,12 @@
+website:
+  image: scher200/alpine-nginx-php
+  restart: unless-stopped
+  volumes:
+    - "./data/www:/var/www/html"
+  expose:
+    - "80"
+#  environment:
+#    VIRTUAL_HOST: testsite.localhost
+#  mem_limit: 1000000000
+#  memswap_limit: 1000000000
+
